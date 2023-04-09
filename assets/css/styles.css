@@ -12,3 +12,11 @@ color: #f4511e;
 .nav-link-custom:hover {
 color: #ff6e40;
 }
+.dropdown-item i {
+ margin-right: 10px;
+ width: 20px;
+ text-align: center;
+}
+.dropdown-item span {
+ vertical-align: middle;
+}
