@@ -14,7 +14,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> <span>Home</span></a>
+    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> <span>Latitude Vs. X</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,10 +25,10 @@
             <i class="fas fa-list-1-2"></i> <span>Plots</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="visualisations/cloudiness.html"><i class="fas fa-cloud-sun"></i> <span>Cloudiness Visualisation</span></a>
-            <a class="dropdown-item" href="visualisations/humidity.html"><i class="fas fa-hot-tub-person"></i> <span>Humidity Visualisation</span></a>
-            <a class="dropdown-item" href="visualisations/temp.html"><i class="fas fa-temperature-half"></i> <span>Temperature Visualisation</span></a>
-            <a class="dropdown-item" href="visualisations/wind.html"><i class="fas fa-wind"></i> <span>Wind Visualisation</span></a>
+            <a class="dropdown-item" href="visualisations/cloudiness-landing.html"><i class="fas fa-cloud-sun"></i> <span>Cloudiness Visualisation</span></a>
+            <a class="dropdown-item" href="visualisations/humidity-landing.html"><i class="fas fa-hot-tub-person"></i> <span>Humidity Visualisation</span></a>
+            <a class="dropdown-item" href="visualisations/temp-landing.html"><i class="fas fa-temperature-half"></i> <span>Temperature Visualisation</span></a>
+            <a class="dropdown-item" href="visualisations/wind-landing.html"><i class="fas fa-wind"></i> <span>Wind Visualisation</span></a>
           </div>
         </li>
         <li class="nav-item">
@@ -48,58 +48,48 @@
     <!-- Jumbotron -->
     <div class="jumbotron text-center">
       <h1 class="display-4">Weather Visualisation Dashboard</h1>
-      <p class="lead">Explore different weather visualizations and compare various weather factors across multiple locations.</p>
+      <p class="lead">Exploring the Intricate Connections Between Latitude and Weather Factors Worldwide</p>
     </div>
 
-    <div class="container-fluid bg-grey text-center">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
-          <div class="well well-lg">
-          <br>
-          <h2>About the Project</h2>
-            <p>
-              Provide a brief description of the project here, explaining its purpose and objectives.
-            </p>
+        <div class="col-md-8">
+          <!-- Left card with plot and description -->
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">About this page</h3>
+              <p class="lead">The Weather Visualization Dashboard showcases a collection of visualizations that highlight the relationship between latitude and various weather factors, such as temperature, humidity, cloudiness, and wind speed. By examining these associations, we gain a deeper understanding of how the Earth's position relative to the equator influences the climate and weather patterns experienced in different locations. These visualizations offer a valuable resource for weather enthusiasts, researchers, and students alike, seeking to explore the complexities of weather and climate on a global scale.</p>
+              <p class="lead">Each visualization focuses on a specific aspect of weather, demonstrating the intricate interactions between latitude and the corresponding weather factor. The dashboard allows users to compare and contrast the visualizations, uncovering insights into the diverse factors that shape the world's climate systems. By presenting these data in a visually engaging and interactive format, the Weather Visualization Dashboard encourages users to delve deeper into the fascinating world of weather and climate science, fostering a greater appreciation for the global forces that shape our daily lives.</p>
+            </div>
           </div>
-            <br>
-            <br>
         </div>
-      </div>
-
-    <!-- Visualization Previews -->
-    <div class="container-fluid bg-grey">
-      <div class="col-md-12">
-        <h2>Visualisations</h2>
-        <br>
-        <br>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <a href="visualisations/cloudiness.html">
-            <img src="assets/images/Fig3.png" alt="Cloudiness Visualisation" class="img-thumbnail">
-            <p>Cloudiness Visualisation</p>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="visualisations/humidity.html">
-            <img src="assets/images/Fig2.png" alt="Humidity Visualisation" class="img-thumbnail">
-            <p>Humidity Visualisation</p>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="visualisations/temp.html">
-            <img src="assets/images/Fig1.png" alt="Temperature Visualisation" class="img-thumbnail">
-            <p>Temperature Visualisation</p>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="visualisations/wind.html">
-            <img src="assets/images/Fig4.png" alt="Wind Visualisation" class="img-thumbnail color="#f4511e">
-            <p>Wind Visualisation</p>
-          </a>
+        <div class="col-md-4">
+          <!-- Right card with 2x2 grid visualizations -->
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Weather Visualizations</h3>
+              <div class="row">
+                <div class="col-6">
+                  <a href="visualisations/cloudiness-landing.html"><img src="assets/images/Fig3.png" alt="Cloudiness" class="img-thumbnail mb-2"></a>
+                </div>
+                <div class="col-6">
+                  <a href="visualisations/humidity-landing.html"><img src="assets/images/Fig2.png" alt="Humidity" class="img-thumbnail mb-2"></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <a href="visualisations/temp-landing.html"><img src="assets/images/Fig1.png" alt="Temperature" class="img-thumbnail mb-2"></a>
+                </div>
+                <div class="col-6">
+                  <a href="visualisations/wind-landing.html"><img src="assets/images/Fig4.png" alt="Wind" class="img-thumbnail mb-2"></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

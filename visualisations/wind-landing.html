@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Weather Visualisation Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html"><i class="fas fa-home"></i> <span>Latitude Vs. X</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-list-1-2"></i> <span>Plots</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="cloudiness-landing.html"><i class="fas fa-cloud-sun"></i> <span>Cloudiness Visualisation</span></a>
+            <a class="dropdown-item" href="humidity-landing.html"><i class="fas fa-hot-tub-person"></i> <span>Humidity Visualisation</span></a>
+            <a class="dropdown-item" href="temp-landing.html"><i class="fas fa-temperature-half"></i> <span>Temperature Visualisation</span></a>
+            <a class="dropdown-item active" href="wind-landing.html"><i class="fas fa-wind"></i> <span>Wind Visualisation</span></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../comparison.html">
+            <i class="fas fa-chart-line"></i> <span>Comparisons</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../data.html">
+            <i class="fas fa-table"></i> <span>Data</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Latitude vs. Wind</h1>
+    <p class="lead">Unveiling the Complex Relationship Between Latitude and Wind Speed Around the World</p>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Left card with plot and description -->
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="card-title">Wind Visualization</h3>
+            <!-- <iframe src="cloudiness.html" frameborder="0" width="100%" height="400"></iframe> -->
+            <img src="../assets/images/Fig4.png" alt="Wind" class="img-fluid img-thumbnail mb-2" width="35%" height="35%">
+            <br>
+            <br>
+            <h4>About the Plot</h4>
+            <p class="lead">The Latitude vs. Wind Speed visualization illustrates the relationship between a location's distance from the equator and the wind speed experienced at that location. Wind speed is a crucial component of weather and climate, as it influences air circulation, heat distribution, and storm formation. By examining the association between latitude and wind speed, we can better understand the dynamics of global wind patterns and the factors that contribute to these variations.</p>
+            <p class="lead">In the visualization, we can observe that wind speed does not have a simple linear correlation with latitude. While wind speeds tend to be higher at higher latitudes, this relationship is influenced by a range of factors such as the Earth's rotation, pressure gradients, and geographical features. The Latitude vs. Wind Speed visualization provides an opportunity to explore the complex interplay between these factors, offering a more comprehensive understanding of how latitude and wind speed are interconnected on a global scale.</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Other Visualizations</h3>
+            <div class="row">
+              <div class="col-6">
+                <a href="cloudiness-landing.html"><img src="../assets/images/Fig3.png" alt="Cloudiness" class="img-thumbnail mb-2"></a>
+              </div>
+              <div class="col-6">
+                <a href="humidity-landing.html"><img src="../assets/images/Fig2.png" alt="Humidity" class="img-thumbnail mb-2"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <a href="temp-landing.html"><img src="../assets/images/Fig1.png" alt="Temperature" class="img-thumbnail mb-2"></a>
+              </div>
+              <div class="col-6">
+                <a href="wind-landing.html"><img src="../assets/images/Fig4.png" alt="Wind" class="img-thumbnail mb-2"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
+
